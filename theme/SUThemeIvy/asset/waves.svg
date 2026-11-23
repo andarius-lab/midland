@@ -1,0 +1,21 @@
+<svg viewBox="0 0 1800 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0%" stop-color="rgb(255,255,255)" stop-opacity=".08"/>
+			<stop offset="50%" stop-color="rgb(255,255,255)" stop-opacity=".02"/>
+		</linearGradient>
+		<filter id="blendFilter">
+			<feBlend in="SourceGraphic" mode="multiply"/>
+		</filter>
+		<symbol id="wave" viewBox="0 0 2000 650">
+			<path d="M 0 80 Q 95 0 180 80 T 360 80 T 540 80 T 720 80 T 900 80 T 1080 80 T 1260 80 T 1440 80 T 1620 80 T 1800 80 T 1980 80 T 2160 80 T 2340 80V700 H-1000"
+				  fill="url(#waveGradient)" style="filter:url(#blendFilter)"/>
+		</symbol>
+	</defs>
+	<use xlink:href="#wave" transform="translate(0,-25)"/>
+	<use xlink:href="#wave" transform="translate(0,75)"/>
+	<use xlink:href="#wave" transform="translate(0,175)"/>
+	<use xlink:href="#wave" transform="translate(0,275)"/>
+	<use xlink:href="#wave" transform="translate(0,375)"/>
+	<use xlink:href="#wave" transform="translate(0,475)"/>
+</svg>
